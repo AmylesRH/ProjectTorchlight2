@@ -5,20 +5,109 @@
 <link href="../static/style.css" rel="stylesheet" type="text/css">
 <title>Typical Climate</title>
 </head>
-<body>
-    <div id="element1">
-        <img src="{{ url_for('main_plot') }}" alt="Image">
-    </div>
-    <div id="element2">
-        <p>What city has the best climate?</p>
-        <p>When planning your trip or vacation you often check weather data for
-                humidity and temperature.</p>
-        <p>Below is the collection of the yearly average values for the following cities: </p>
-        <ul>
-                {% for city_id, city_name in cities %}
-                <li><a href="">{{ city_name }}</a></li>
-                {% endfor %}
-        </ul>
-    </div>
-</body>
-</html>
+<H1>Red Hat Content Findability Dashboard</H1>
+<hr>
+
+
+<form method="POST" action="">
+    Report <input type = "text" name="report" />
+    <br>
+    Product <input type = "text" name="product" />
+
+    <br>
+    Content Type <input type = "text" name="contenttype" />
+    <br>
+    <br>
+    Content Type <input type = "text" name="contenttype" />
+    <br>
+
+</form>
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="6">Current Content Inventory Overview</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Documents</td>
+      <td>19500</td>
+      <td colspan="4" rowspan="7"><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z'/%3e%3c/svg%3e" alt="Image" width="200" height="200"></td>
+    </tr>
+    <tr>
+      <td>Added</td>
+      <td>230</td>
+    </tr>
+    <tr>
+      <td>Hidden/Removed</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>202</td>
+      <td>19489</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Visits</td>
+      <td>23900</td>
+    </tr>
+    <tr>
+      <td>Page Views</td>
+      <td>30450</td>
+    </tr>
+  </tbody>
+  </table>
+  <br>
+  <br>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Products</th>
+        <th>Content Type</th>
+        <th>Use Case</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z'/%3e%3c/svg%3e" width="100" height="100"></td>
+        <td><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z'/%3e%3c/svg%3e" width="100" height="100"></td>
+        <td><img src="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3e%3cpath fill='%23000000' d='M8 256c0 136.966 111.033 248 248 248s248-111.034 248-248S392.966 8 256 8 8 119.033 8 256zm248 184V72c101.705 0 184 82.311 184 184 0 101.705-82.311 184-184 184z'/%3e%3c/svg%3e" width="100" height="100"></td>
+      </tr>
+      <tr>
+        <td>Product 1</td>
+        <td>Content Type 1</td>
+        <td>Use Case 1</td>
+      </tr>
+      <tr>
+        <td>Product 2</td>
+        <td>Content Type 2</td>
+        <td>Use Case 2</td>
+      </tr>
+      <tr>
+        <td>Product 3</td>
+        <td>Content Type 3</td>
+        <td>Use Case 3</td>
+      </tr>
+      <tr>
+        <td>Product 4</td>
+        <td>Content Type 4</td>
+        <td>Use Case 4</td>
+      </tr>
+      <tr>
+        <td>Product 5</td>
+        <td>Content Type 5</td>
+        <td>Use Case 5</td>
+      </tr>
+      <tr>
+        <td>Expand</td>
+        <td>Expand</td>
+        <td>Expand</td>
+      </tr>
+    </tbody>
+    </table>

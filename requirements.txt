@@ -11,3 +11,5 @@ python-dateutil==2.7.5
 six==1.16.0
 SQLAlchemy==1.2.14
 Werkzeug==0.14.1
+mysql-connector-python
+mysql-connector
