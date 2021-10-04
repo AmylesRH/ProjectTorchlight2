@@ -19,4 +19,5 @@ plt.pie(contenttype)
 mylabels = ['troubleshooting', 'migration', 'installation', 'administration', 'development']  # fix this line
 r = plt.pie(metadata_counts, labels=mylabels, autopct='%.0f%%')  # fix this line
 plt.title('Resources by Content Type’)
-plt.show()
+savefig(img) #replaces plt.show() to create an image to display on web page
+#plt.show()

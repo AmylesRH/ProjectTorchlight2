@@ -11,7 +11,7 @@ try:
         host="localhost",
         user=input("Enter username: "),
         password=getpass("Enter password: "),
-        database="torchlight",
+        database="ccsdataplatformdb",
     ) as connection:
         print(connection)
 except Error as e:
