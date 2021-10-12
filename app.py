@@ -38,6 +38,9 @@ with connection.cursor() as cursor:
      for row in cursor.fetchall():
          print(row)
 
+def datapull():
+    cursor.execute ("select * from WebBehavior")
+
 @app.route('/')
 def main():
     """Entry point; the view for the main page"""
