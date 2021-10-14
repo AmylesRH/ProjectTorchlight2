@@ -25,9 +25,12 @@ def connect():
             conn.close()
 
 
+
+
 if __name__ == '__main__':
     connect()
 
+#App Select Statement
 select_product = """
  SELECT *
  FROM WebBehavior
@@ -39,7 +42,7 @@ with connection.cursor() as cursor:
          print(row)
 
 def datapull():
-    cursor.execute ("select * from WebBehavior")
+    cursor.execute ("select * from WebBehavior where ProductFacet= ")
 
 @app.route('/')
 def main():
