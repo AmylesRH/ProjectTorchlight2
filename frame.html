@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Choose a Product<SELECT name="city">
+{% for c in cityList %}
+	<OPTION value={{c.city_id}}>{{c.city_name}}</option>
+{% endfor %}
+</SELECT>
+</body>
+</html>

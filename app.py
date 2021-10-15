@@ -5,9 +5,8 @@ from mysql.connector import connect, Error
 
 app = Flask(__name__)
 
-
+#Connect to MySQL database
 def connect():
-    """ Connect to MySQL database """
     conn = None
     try:
         conn = mysql.connector.connect(host='https://ccsdata.apps.ocp4.prod.psi.redhat.com',
@@ -43,6 +42,11 @@ with connection.cursor() as cursor:
 
 def datapull():
     cursor.execute ("select * from WebBehavior where ProductFacet= ")
+
+#populate drop down menu
+def input():
+    product_list=cursor.execute("SELECT ProductFacet FROM WebBahavior")
+    return render_template("input.html",cityList=cityList )
 
 @app.route('/')
 def main():
